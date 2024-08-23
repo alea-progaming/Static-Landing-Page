@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: #fff8f6;
+  --secondary-bg-color: #76232f;
   --button-links: #0a683b;
   --primary-texts: #000;
   --secondary-texts: #fff;
@@ -21,11 +22,15 @@ body {
 }
 
 nav {
-  padding: 1rem;
-  height: 100px;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100rem;
+  height: 100px;
+  padding: 0 10rem;
+  background-color: var(--bg-color);
+  z-index: 1000; /* Optional: to ensure it appears above other content */
 }
 
 .nav__logo a {
@@ -43,8 +48,8 @@ nav {
   text-transform: uppercase;
 }
 
-.links a {
-  padding-left: 4rem;
+.nav__links a {
+  padding-left: 3rem;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: bold;
@@ -56,25 +61,64 @@ nav {
   color: #346233;
 }
 
-.hero {
-  position: relative;
-  align-items: center;
+.container {
   display: flex;
   flex-direction: row;
-  gap: 18rem;
+  align-items: center;
+  gap: 14rem;
   padding: 7rem 6rem;
 }
-
-h2 {
-  padding-bottom: 2rem;
-  font-size: 70px;
+.details .title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 
-p {
-  font-size: 25px;
+.details .description {
+  font-size: 1.4rem;
+}
+
+.details .order__now {
+  background-color: var(--button-links);
+  color: var(--secondary-texts);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  border: none;
+  transition: 0.3s;
 }
 
 .beverage img {
   position: relative;
   border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  background-color: #006241;
+}
+
+.drink img {
+  border-radius: 0;
+  width: 500px;
+  height: 500px;
+  background-color: #006241;
+  border-radius: 1rem;
+}
+.food img {
+  border-radius: 0;
+  width: 500px;
+  height: 500px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 1rem;
+}
+#drink,
+#food {
+  gap: 12rem !important;
+}
+
+.contact-about {
+  position: relative;
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-texts);
 }
