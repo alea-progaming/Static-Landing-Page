@@ -9,12 +9,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
     <title>Starbucks Landing Page</title>
   </head>
   <body>
@@ -23,8 +25,8 @@
       <ul class="nav__links">
         <li class="links"><a href="#hero">Home</a></li>
         <li class="links"><a href="#drink">Seasonal</a></li>
-        <li class="links"><a href="#">About Us</a></li>
-        <li class="links"><a href="#">Contact Us</a></li>
+        <li class="links"><a href="#contact-about">About Us</a></li>
+        <li class="links"><a href="#contact-about">Contact Us</a></li>
       </ul>
     </nav>
     <div class="container" id="hero">
@@ -93,15 +95,31 @@
         <img src="seasonal food.png" alt="" />
       </div>
     </div>
-    <div class="container contact-about" id="contact-about">
-      <div class="col-2">
-        <h2 class="title">Our Story</h2>
-        <p class="description">
-          Starbucks has been making coffee since 1971. Our story is simple yet
-          powerful, with roots in New York City and a passion for making coffee
-          that tastes good.
-        </p>
-      </div>
+    <div class="contact-about" id="contact-about">
+      <div class="contact">
+        <h3 class="contact-title">Contact me</h2>
+          <form action="">
+            <input type="email" name="email" id="email" placeholder="example@mail.com">
+            <textarea name="message" id="message" cols="30" rows="8" placeholder="Write me a message..."></textarea></br>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="vl"></div>
+          <div class="about">
+          <h3>About me</h3>
+          <h4>Hi, I'm Mika,</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique sit animi ullam sequi molestias consequuntur architecto laudantium quasi voluptatum aliquam consequatur ipsa quibusdam eveniet iusto iste doloribus, hic illo maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis sed necessitatibus maxime accusantium voluptas porro ipsam impedit? Rem ad, vel laborum rerum enim est! Deserunt perferendis qui quam aspernatur. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime nobis eius eaque qui, iste voluptas cumque aliquam sit aut, laborum tempora quia provident autem magnam repellat illum libero accusamus. Neque.</p>
+        </div>
     </div>
+    <footer class="footer">
+      <p class="copyright">&copy; All rights reserved</p>
+      <div class="end__footer">
+        <ul class="links">
+          <li class="social__links"><a href="#"><i class='bx bxl-facebook'></i></a></li>
+          <li class="social__links"><a href="#"><i class='bx bxl-twitter'></i></a></li>
+          <li class="social__links"><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

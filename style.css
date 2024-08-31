@@ -18,19 +18,22 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--bg-color);
-  padding: 0 12rem;
 }
 
 nav {
   position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100rem;
-  height: 100px;
-  padding: 0 10rem;
+  align-items: baseline;
+  justify-content: center;
+  gap: 50rem;
+  width: 100vw;
+  margin: 0;
   background-color: var(--bg-color);
-  z-index: 1000; /* Optional: to ensure it appears above other content */
+  z-index: 100; /* Optional: to ensure it appears above other content */
+}
+
+.nav__logo {
+  margin: 0;
 }
 
 .nav__logo a {
@@ -39,12 +42,14 @@ nav {
   text-decoration: none;
   color: #0a683b;
   transition: 0.3s;
+  margin: 0;
 }
 
 .nav__links {
   list-style: none;
   display: flex;
   align-items: center;
+  margin: 0;
   text-transform: uppercase;
 }
 
@@ -118,7 +123,88 @@ nav {
 
 .contact-about {
   position: relative;
-  width: 100%;
+  display: flex;
+  padding: 0 10rem;
   background-color: var(--secondary-bg-color);
   color: var(--secondary-texts);
+}
+.contact {
+  flex: 1;
+  margin: 5rem;
+}
+
+.contact {
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact h3,
+.about h3 {
+  font-weight: 800;
+}
+
+.contact input,
+.contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.contact button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9a3142;
+  color: var(--secondary-texts);
+  cursor: pointer;
+}
+
+.vl {
+  border: 2px solid var(--secondary-texts);
+  height: 25rem;
+  align-self: center;
+}
+
+.about {
+  flex: 1;
+  margin: 5rem;
+  justify-content: flex-start;
+}
+
+.about h4 {
+  margin-bottom: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--button-links);
+  color: var(--secondary-texts);
+  justify-content: space-around;
+  gap: 50rem;
+}
+.end__footer {
+  display: flex;
+}
+.copyright {
+  margin: 20px;
+}
+.links {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+.social__links a {
+  position: relative;
+  color: #ffffff;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+}
+.social__links a:hover {
+  color: #ffc4c4;
 }
